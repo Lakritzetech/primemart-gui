@@ -14,8 +14,7 @@ function displayEmployees(employees) {
       <td>
         <button class="btn btn-danger" onclick="deleteEmployee(${employee.Id})">Deletar</button>
         <button class="btn btn-primary" data-toggle="modal" data-target="#editProductModal" onclick="editEmployeeModal(${employee.Id})">Editar</button>
-      </td>`
-    ;
+      </td>`;
     tbody.appendChild(row);
   });
 }
@@ -30,7 +29,7 @@ function saveEmployeeChanges() {
   const employeeId = document.getElementById('editEmployeeId').value;
   const employeeName = document.getElementById('editEmployeeName').value;
   const employeeEmail = document.getElementById('editEmployeeEmail').value;
-  const employeeCpf = formatCPF(document.getElementById('editEmployeeCPF').value);
+  const employeeCpf = document.getElementById('editEmployeeCPF').value.replace(/\D/g, '');
   const employeeShift = document.getElementById('editEmployeeShift').value;
   const employeePhone = document.getElementById('editEmployeePhone').value;
 
