@@ -19,7 +19,8 @@ function addEmployee() {
         document.querySelector('#addEmployeeForm').reset();
       })
       .catch(error => {
-        console.error('Erro ao adicionar o funcionário:', error);
+        const errorMessage = error.response.data.message;
+        document.getElementById('cpfError').textContent = errorMessage;
       });
   }
   
