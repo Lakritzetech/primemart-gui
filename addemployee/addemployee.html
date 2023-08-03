@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastra funcionario</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="addemployee.css">
+</head>
+<body>
+    <!-- O formulário vai aqui -->
+    <div class="container">
+        <form class="row jumbotron box8">
+            <div class="col-sm-12 mx-t3 mb-4">
+                <b><h2     class="text-center text-info">CADASTRAR FUNCIONÁRIO</h2></b>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="name-f">Nome</label>
+                <input type="text" class="form-control" name="fname" id="name-f" placeholder="Enter your first name." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="name-l">Sobrenome</label>
+                <input type="text" class="form-control" name="lname" id="name-l" placeholder="Enter your last name." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email." required>
+            </div>
+            
+            <div class="col-sm-6 form-group">
+                <label for="address-1">Endereço</label>
+                <input type="address" class="form-control" name="Locality" id="address-1" placeholder="Locality/House/Street no." required>
+                
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="Date">Date de Contratação</label>
+                <input type="Date" name="dob" class="form-control" id="Date" placeholder="" required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="shift">Turno</label>
+                <select class="form-control custom-select browser-default">
+                    <option value="Manha">Manha</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noite">Noite</option>
+                    
+                </select>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="address-2">Bairro</label>
+                <input type="address" class="form-control" name="address" id="address-2" placeholder="Village/City Name." required>
+            </div>
+            <div class="col-sm-4 form-group">
+                <label for="State">Estado</label>
+                <input type="address" class="form-control" name="State" id="State" placeholder="Enter your state name." required>
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for="zip">CEP</label>
+                <input type="zip" class="form-control" name="Zip" id="zip" placeholder="Postal-Code." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="Country">País</label>
+                <select class="form-control custom-select browser-default">
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Samoa">Samoa</option>
+                    <option value="Islands">Islands</option>
+                    <option value="Uruguay">Uruguay</option>
+                </select>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="Date">Date de Nascimento</label>
+                <input type="Date" name="dob" class="form-control" id="Date" placeholder="" required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="sex">Genero</label>
+                <select id="sex" class="form-control browser-default custom-select">
+                    <option value="male">Masculino</option>
+                    <option value="female">Femino</option>
+                    <option value="unspecified">Militante</option>
+                </select>
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for="cod">Codigo do País</label>
+                <select class="form-control browser-default custom-select">
+                    <option data-countryCode="US" value="1" selected>USA (+1)</option>
+                    <option data-countryCode="TV" value="688">Tuvalu (+688)</option>
+                    <option data-countryCode="BR" value="55">Brasil (+55)</option>
+                </select>
+            </div>
+            <div class="col-sm-4 form-group">
+                <label for="tel">Celular</label>
+                <input type="tel" name="phone" class="form-control" id="tel" placeholder="Enter Your Contact Number." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="pass">Senha</label>
+                <input type="Password" name="password" class="form-control" id="pass" placeholder="Enter your password." required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="pass2">Confirme a senha</label>
+                <input type="Password" name="cnf-password" class="form-control" id="pass2" placeholder="Re-enter your password." required>
+            </div>
+        
+            <div>
+                <div class="col-sm-12 form-group mb-0">
+                   <button class="btn btn-primary float-right">Submit</button>
+                <button class="btn btn-primary-back float-left">Voltar</button>
+                </div>
+             </div>
+        </form>
+    </div>
+</body>
+</html>

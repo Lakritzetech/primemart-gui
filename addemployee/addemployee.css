@@ -1,0 +1,130 @@
+/* GENERAL RESETS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4FDA8C;
+}
+
+/* BODY */
+body {
+    position: relative;
+    color: #666;
+    font: 16px/26px "Raleway", sans-serif;
+    text-align: left;
+    height: 100%;
+    background: -moz-linear-gradient(270deg, rgba(34,46,64,1) 0%, rgba(81,195,184,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(34,46,64,1)), color-stop(100%, rgba(81,195,184,1)));
+    background: -webkit-linear-gradient(270deg, rgba(34,46,64,1) 0%, rgba(81,195,184,1) 100%);
+    background: linear-gradient(180deg, rgba(34,46,64,1) 0%, rgba(81,195,184,1) 100%);
+    overflow: hidden;
+}
+
+/* FORM STYLES */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.jumbotron {
+    background-color: #5A6374;
+    border-radius: 10px;
+    padding: 40px;
+    color: #fff;
+}
+
+.form-control {
+    background-color: #5A6374;
+    color: #fff;
+    border: 1px solid #4FDA8C;
+}
+
+.form-control:focus {
+    border-color: #4FDA8C;
+    box-shadow: none;
+}
+
+.custom-select.browser-default {
+    background-color: #5A6374;
+    color: #fff;
+    border: 1px solid #4FDA8C;
+}
+
+.custom-select.browser-default:focus {
+    border-color: #4FDA8C;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #4FDA8C;
+    border-color: #4FDA8C;
+    color: #fff;
+}
+.btn-primary-back {
+    background-color: #6d0d32;
+    border-color: #000000;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #2D515C;
+    border-color: #2D515C;
+}
+
+.form-check-input[type="checkbox"]:checked {
+    background-color: #4FDA8C;
+    border-color: #4FDA8C;
+}
+
+.form-check-input[type="checkbox"]:checked:focus {
+    box-shadow: none;
+}
+
+.form-check-input[type="checkbox"]:focus {
+    box-shadow: none;
+}
+
+/* ADDITIONAL STYLES */
+.text-info {
+    color: #4FDA8C;
+    font-size: 45PX;
+    
+}
+
+.text-center {
+    text-align: center;
+}
+
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+
+/* MEDIA QUERY */
+@media only screen and (min-width: 40em) {
+    /* SLIGHTLY ADJUST FORM ON LARGER SCREENS */
+    .jumbotron {
+        padding: 50px;
+    }
+}
